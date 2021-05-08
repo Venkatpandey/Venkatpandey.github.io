@@ -24,7 +24,8 @@
 				<li><a href="#one" class="active">About</a></li>
 				<li><a href="#two">Things I Can Do</a></li>
 				<li><a href="#three">A Few Accomplishments</a></li>
-				<li><a href="#four">Contact</a></li>
+				<li><a href="#four">Photo Gallery</a></li>
+				<li><a href="#five">Contact</a></li>
 			</ul>
 		</nav>		
 	</section>
@@ -63,7 +64,7 @@
 						<li>Strong analytical and problem-solving skills</li>
 						<li>Project organisational and Planning skills</li>
 						<li>Agile methodologies</li>
-						<li>Secondary : TypeScript, Python</li>
+						<li>Secondary : TypeScript, Python, Bash/Shell Scripting</li>
 						<li>DevOps, UI / UX</li>
 					</ul>
 					<br>
@@ -87,21 +88,30 @@
 				<div class="container">
 					<h3>A Few Accomplishments</h3>
 					<p>Some of the recent Projects that I have done</p>
+					<h4>Software Development @ ICE</h4>
 					<div class="features">
 						<article>
-							<b><i>Java Developer | ICE International Copyright Enterprise GmbH | April 2018 - Till Date</i></b>
+							<b><i>Senior Developer | ICE International Copyright Enterprise GmbH | March 2020 - Till Date</i></b>
 							<div class="">
 								<p>Development of ICE Online Licensing System, and ICE Online Import System.<br>
 									Contributing in all phases of the development life-cycle.<br>
-									Development and maintenance of Java batch process jobs, middleware<br>
+									Introduced process automation and reduced manual efforts.<br>
+									Development and maintenance of Java jobs, middleware<br>
 									applications, Lambda functions, spring boot based services, data pipelines<br>
-									based on spark & scala<br>
-									Stack: Java EE, Scala, Spring(boot), Hibernate, Struts, thymeleaf, JUnit, PLSQL,<br>
-									Oracle DB, Apache Spark, Maven, Git, Jenkins, AWS EMR.<br>
+									based on spark & scala, Automation Apps<br>
+									Stack: Java, Scala, Spring, Hibernate, JUnit, SQL, Apache Spark, Maven, Git, AWS.<br>
 								Scrum environment; JIRA, GitHub, Slack, Confluence, Service Now</p>
 							</div>
-							<br>
-							<h4>Software Development @ ICE</h4>
+
+							<b><i>Java Developer | ICE International Copyright Enterprise GmbH | April 2018 - Feb 2020</i></b>
+							<div class="">
+								<p>	Contributing in all phases of the development life-cycle.<br>
+									Development and maintenance of Java batch process, Middleware User Interface<br>
+									Applications, SpringBoot based services<br>
+									Stack: Java EE, Scala, Spring(boot), Hibernate, Struts, thymeleaf, JUnit, PLSQL,<br>
+									Oracle DB, Apache Spark, Maven, Git, Jenkins, AWS EMR.<br></p>
+							</div>
+														
 							<b><i>PHP Developer | ICE International Copyright Enterprise GmbH | April 2016 - March 2018</i></b>
 							<div class="">
 								<p>Contribute to all aspects if the software life cycle from analysis,
@@ -145,15 +155,23 @@
 					</div>
 				</div>
 			</section>
-			<!-- four -->
+
+			<!-- Four -->
 			<section id="four">
+				<div class="container">
+					<div class="directorySlider"></div>
+				</div>
+			</section>
+
+			<!-- Five -->
+			<section id="five">
 				<div class="container">
 					<h3>Contact</h3>
 					<p>My Other Social Media Profiles</p>
 					<ul class="icons">
 						<li><a href="https://twitter.com/pandey_venkat" class="icon fa-twitter" target="_blank" title="To Twitter Profile"><span class="label">Twitter</span></a></li>
 						<!--<li><a href="https://plus.google.com/+VenkatRamanPandey/" class="icon fa-google-plus"><span class="label">Google+</span></a></li>-->
-						<li><a href="https://www.instagram.com/venkat.pandey/" class="icon fa-instagram" target="_blank" title="To Instagram Profile"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.instagram.com/venkat.pandey.shweta/" class="icon fa-instagram" target="_blank" title="To Instagram Profile"><span class="label">Instagram</span></a></li>
 						<li><a href="https://gitlab.com/Venkatpandey" target="_blank" title="To GitLab Profile"><span class="label">GitLab</span></a></li>
 						<li><a href="https://www.linkedin.com/in/venkatramanpandey" class="icon fa-linkedin" target="_blank" title="To LinkedIn Profile"><span class="label">Linkedin</span></a></li>
 						<li><a href="https://www.xing.com/profile/VenkatRaman_Pandey" class="icon fa-xing" target="_blank" title="To XING Profile"><span class="label">Xing</span></a></li>
@@ -184,7 +202,8 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
-	<script type="text/javascript">stLight.options({publisher: "b5e5ab6b-debe-45e7-a9c9-83e74bf09601", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<!-- 	<script type="text/javascript">stLight.options({publisher: "b5e5ab6b-debe-45e7-a9c9-83e74bf09601", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> -->
+	<script src="assets/js/directorySlider.js"></script>
 	<script language="JavaScript">
 		var space = " ";
 		var speed = "100";
@@ -198,7 +217,12 @@
 			window.setTimeout("Scroll()", speed);
 		}
 		Scroll();
-
+$(document).ready(function(){
+  $('.directorySlider').directorySlider({
+  	'directory' : 'images/show/',
+  	'numslides' : '7'
+  });
+});
 	</script>
 </body>
 </html>
