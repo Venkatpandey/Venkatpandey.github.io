@@ -15,7 +15,7 @@
 
        // Merge config settings
        var config = $.extend({
-           animation: 'slide',
+           animation: 'uncover',
            filebase: 'slide_',
            extension: 'jpg',
            speed: 1000,
@@ -35,6 +35,7 @@
        }
 
        $(elem).css('overflow', 'hidden');
+       $(elem).css('position', 'relative');
 
        // Get slides
        var slides = [],

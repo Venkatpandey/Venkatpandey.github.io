@@ -159,7 +159,9 @@
 			<!-- Four -->
 			<section id="four">
 				<div class="container">
-					<div class="directorySlider"></div>
+					<h3>Photo Gallery</h3>
+					<p>Enjoy the slideshow :)</p>
+					<div class="directorySlider" id="show"></div>
 				</div>
 			</section>
 
@@ -220,8 +222,12 @@
 $(document).ready(function(){
   $('.directorySlider').directorySlider({
   	'directory' : 'images/show/',
-  	'numslides' : '7'
+  	'numslides' : '17',
+  	'height' : '700',
+  	'width' : '800'
   });
+
+
 });
 	</script>
 </body>
